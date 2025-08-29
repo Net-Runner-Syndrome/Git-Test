@@ -1,0 +1,54 @@
+body >*
+{
+    margin-bottom: 10px;
+}
+header{
+    justify-self: center;
+}
+button{
+    min-width: 70px;
+    min-height: 45px;
+    width: 40rem;
+}
+.calandar
+{
+ margin: auto;
+ display: grid;
+ grid-template-columns: repeat(7, 1fr);
+ 
+ text-align:center;
+ font-weight:700;
+ border: 3px solid black;
+ padding: 3px;
+ border-radius: 5px;
+ gap:5px;
+}
+.calandar >* 
+{
+    border: 3px solid rgb(71, 70, 70);
+    border-radius: 5px;
+}
+.calandar >*:hover
+{
+    background-color: aliceblue;
+}
+/*Responsiveness*/
+@media (max-width: 768px){
+    .calandar
+{
+ grid-template-columns: repeat(3, 1fr);
+}
+header button{
+  width: 400px;
+}
+}
+@media (max-width: 480px){
+    .calandar
+{
+ grid-template-columns: repeat(1, 1fr);
+}
+header button
+{
+    width: 190px;
+}
+}
